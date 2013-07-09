@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="800dp"
+    android:layout_height="190dp"
+    android:padding="15dp"
+    android:background="@color/building_province_background" >
+
+    <ImageView
+        android:id="@+id/ivThumbnail"
+        android:layout_width="215dp"
+        android:layout_height="160dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/_building_item_bg"
+        android:contentDescription="@string/app_name" />
+    
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivThumbnail"
+        android:text="北大科技园  博雅C-Center"
+        android:textColor="@color/font_white"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_toRightOf="@id/ivThumbnail"
+        android:lines="4"
+        android:text="北大科技园  博雅C-Center 源自北大百年文化底蕴 传承方正多产业发展力北大科技园  博雅C-Center 源自北大百年文化底蕴 传承方正多产业发展力北大科技园  博雅C-Center 源自北大百年文化底蕴 传承方正多产业发展力北大科技园 ..."
+        android:textColor="@color/font_white"
+        android:textSize="20sp" />
+    <Button 
+        android:id="@+id/btnDetail"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/building_province_house_btn" />
+</RelativeLayout>

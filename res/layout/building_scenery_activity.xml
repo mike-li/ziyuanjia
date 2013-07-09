@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <!-- title -->
+
+    <include
+        android:id="@+id/includeHead"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/model_title_toolbar" />
+
+    <!-- body -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/includeLeft"
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            layout="@layout/model_left_toolbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:layout_width="810dp"
+                android:layout_height="630dp" >
+
+                <ImageView
+                    android:id="@+id/ivLargeImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/_building_scenery_large_image_01"
+                    android:contentDescription="@string/app_name" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@drawable/building_scenery_cover"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/btnLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/building_scenery_sign_left_btn" />
+
+                    <Button
+                        android:id="@+id/btnRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/building_scenery_sign_right_btn" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/scrollView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:layout_toLeftOf="@id/btnRight"
+                        android:layout_toRightOf="@id/btnLeft"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <GridView
+                                android:id="@+id/gridView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:verticalSpacing="10dp" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="50dp" >
+
+                    <Button
+                        android:id="@+id/btnProject"
+                        android:layout_width="110dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@drawable/building_scenery_project_btn" />
+
+                    <Button
+                        android:id="@+id/btnEngineering"
+                        android:layout_width="110dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/building_scenery_engineering_btn" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llIntro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <ScrollView
+                        android:layout_width="750dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/building_scenery_intro" >
+
+                        <TextView
+                            android:id="@+id/tvIntro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="36dp"
+                            android:text="啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"
+                            android:textColor="@color/font_black"
+                            android:textSize="25sp" />
+                    </ScrollView>
+
+                    <Button
+                        android:id="@+id/btnHide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/building_scenery_sign_down" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

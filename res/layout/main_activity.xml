@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <!-- title -->
+    <include
+       android:id="@+id/includeHead"
+       android:layout_width="match_parent"
+       android:layout_height="48dp"
+       layout="@layout/model_title_toolbar" />
+
+    <!-- body -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <!-- vip -->
+
+        <RelativeLayout
+            android:id="@+id/rlVip"
+            android:layout_width="275dp"
+            android:layout_height="445dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/main_vip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/main_cover"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50dp"
+                    android:text="@string/main_vip_exclusive_area"
+                    android:textColor="@color/font_white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 医疗健康 -->
+
+        <RelativeLayout
+            android:id="@+id/rlHealth"
+            android:layout_width="275dp"
+            android:layout_height="260dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/rlVip"
+            android:background="@drawable/main_health" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/main_cover"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50dp"
+                    android:text="@string/main_health"
+                    android:textColor="@color/font_white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 金融理财 -->
+
+        <RelativeLayout
+            android:id="@+id/rlFinancial"
+            android:layout_width="275dp"
+            android:layout_height="260dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/rlHealth"
+            android:background="@drawable/main_finalcing" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/main_cover"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50dp"
+                    android:text="@string/main_financial"
+                    android:textColor="@color/font_white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 商城 -->
+
+        <RelativeLayout
+            android:id="@+id/rlMall"
+            android:layout_width="275dp"
+            android:layout_height="174dp"
+            android:layout_below="@id/rlHealth"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/rlVip"
+            android:background="@drawable/main_mall" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/main_cover"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50dp"
+                    android:text="@string/main_mall"
+                    android:textColor="@color/font_white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 电子书苑 -->
+
+        <RelativeLayout
+            android:id="@+id/rlBook"
+            android:layout_width="275dp"
+            android:layout_height="174dp"
+            android:layout_below="@id/rlHealth"
+            android:layout_toRightOf="@id/rlMall"
+            android:background="@drawable/main_book" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/main_cover"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50dp"
+                    android:text="@string/main_book"
+                    android:textColor="@color/font_white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 教育学习 -->
+
+        <RelativeLayout
+            android:id="@+id/rlEducation"
+            android:layout_width="275dp"
+            android:layout_height="162dp"
+            android:layout_below="@id/rlVip"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/main_education" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/main_cover"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50dp"
+                    android:text="@string/main_education"
+                    android:textColor="@color/font_white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 便民服务 -->
+
+        <RelativeLayout
+            android:id="@+id/rlFacilitate"
+            android:layout_width="275dp"
+            android:layout_height="162dp"
+            android:layout_below="@id/rlVip"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/rlEducation"
+            android:background="@drawable/main_facilitate" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/main_cover"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50dp"
+                    android:text="@string/main_facilitate_people"
+                    android:textColor="@color/font_white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 楼盘介绍 -->
+
+        <RelativeLayout
+            android:id="@+id/rlBuilding"
+            android:layout_width="275dp"
+            android:layout_height="162dp"
+            android:layout_below="@id/rlVip"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/rlFacilitate"
+            android:background="@drawable/main_building" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/main_cover"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50dp"
+                    android:text="@string/main_building"
+                    android:textColor="@color/font_white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

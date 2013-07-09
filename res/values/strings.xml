@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">资源家</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="lastUpdate">最后更新</string>
+    <string name="load_more">加载更多</string>
+    
+    <string name="vip_area">专享区</string>
+    <string name="facilitate">便民</string>
+    <string name="financing">理财</string>
+    <string name="health">健康</string>
+    <string name="education">教育</string>
+    <string name="building">楼盘</string>
+    <string name="book">书苑</string>
+    <string name="mall">商城</string>
+    
+    <string name="main_vip_exclusive_area">只有你可以</string>
+    <string name="main_health">北大医疗，值得信赖</string>
+    <string name="main_financial">方正金融，理财之道</string>
+    <string name="main_mall">品质追求，奢华享受</string>
+    <string name="main_book">海量资源，无限畅读</string>
+    <string name="main_education">北大教育，珍贵资源</string>
+    <string name="main_facilitate_people">方方面面，生活无忧</string>
+    <string name="main_building">资源楼市，随时知晓</string>
+    <string name="vip_click_detail">点击查看</string>
+    
+    <string name="vip_channel_intro">我知道您无力奔波，我知道您无心等待，北大国际医院集团怡健殿健康管理中心携手北大医学部所属三甲医院，致力于解决业主来京看病问题，提供贴心人文关怀，为您的健康保驾护航。</string>
+	<string name="vip_evaluating_intro">业主持专享卡，以优惠价享受由北大方正教育心理研究院基于国内首创的“测评与咨询一体化”的服务，根据您子女的“学科兴趣”、“职业兴趣”、“个性风格”等与未来发展相关的心理特点进行专业评估规划，为您孩子的发展助跑！</string>
+    <string name="vip_classroom_intro">依托北大深厚的文化底蕴，邀请相关专家及教授，为业主提供涵盖经济、文化、健康等内容的课程讲座，为业主打造集通俗性和专业性于一体的文化和思想的盛宴。</string>
+	<string name="vip_favorable_intro">业主持专享卡凭有效护照可进入北大资源集团旗下的重庆、青岛、杭州免税店购买产品，尊享高端服务品质和超值的购物体验。</string>
+    <string name="vip_trust_intro">北大资源集团为业主推荐高回报、高安全性的信托产品，往期回报率高达11%（具体收益根据市场调整而调整，请随时关注网站广告信息)</string>
+	<string name="vip_consult_health_intro">汇聚北大所属重点三甲医院专家及教授，以及北大方正世嘉中医院的传世中医名家牛志刚大夫及众多中医专家，为业主提供健康类在线免费咨询服务，让健康意识深入您心，让健康服务走进您的生活。</string>
+    <string name="vip_job_intro">资源家为业主打开一扇通往国内知名企业——北大资源集团及其所属企业就业的大门！所有业主及其子女都可以享受到优先被录用的机会！北大资源集团欢迎你！</string>
+</resources>

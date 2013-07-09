@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 便民 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include
+       android:id="@+id/includeHead"
+       android:layout_width="match_parent"
+       android:layout_height="48dp"
+       layout="@layout/model_title_toolbar" />
+    
+    <!-- body -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include
+            android:id="@+id/includeLeft"
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            layout="@layout/model_left_toolbar" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/rlPhone"
+                android:layout_width="387dp"
+                android:layout_height="333dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/facilitate_phone_top_up" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlPhoneDetail"
+                        android:layout_width="387dp"
+                        android:layout_height="109dp"
+                        android:background="@drawable/vip_item_cover"
+                        android:padding="5dp"
+                        android:visibility="invisible" >
+
+                        <TextView
+                            android:layout_width="526dp"
+                            android:layout_height="wrap_content"
+                            android:text="我知道您无力奔波，我知道您无心等待，北大国际医院集团怡健殿健康管理中心携手北大医学部所属三甲医院，致力于解决业主来京看病问题，提供贴心人文关怀，为您的健康保驾护航。"
+                            android:textColor="@color/font_white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/btnPhoneDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/vip_item_detail_btn"
+                            android:gravity="center"
+                            android:text="@string/vip_click_detail"
+                            android:textColor="@color/font_pink"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlHotels"
+                android:layout_width="412dp"
+                android:layout_height="185dp"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/rlPhone"
+                android:background="@drawable/facilitate_hotel_order" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlHotelsDetail"
+                        android:layout_width="412dp"
+                        android:layout_height="109dp"
+                        android:background="@drawable/vip_item_cover"
+                        android:padding="5dp"
+                        android:visibility="invisible" >
+
+                        <TextView
+                            android:layout_width="526dp"
+                            android:layout_height="wrap_content"
+                            android:text="我知道您无力奔波，我知道您无心等待，北大国际医院集团怡健殿健康管理中心携手北大医学部所属三甲医院，致力于解决业主来京看病问题，提供贴心人文关怀，为您的健康保驾护航。"
+                            android:textColor="@color/font_white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/btnHotelsDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/vip_item_detail_btn"
+                            android:gravity="center"
+                            android:text="@string/vip_click_detail"
+                            android:textColor="@color/font_pink"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlWaterPayment"
+                android:layout_width="387dp"
+                android:layout_height="232dp"
+                android:layout_below="@id/rlPhone"
+                android:layout_margin="5dp"
+                android:background="@drawable/facilitate_water_payment" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlWaterPaymentDetail"
+                        android:layout_width="387dp"
+                        android:layout_height="109dp"
+                        android:background="@drawable/vip_item_cover"
+                        android:padding="5dp"
+                        android:visibility="invisible" >
+
+                        <TextView
+                            android:layout_width="526dp"
+                            android:layout_height="wrap_content"
+                            android:text="我知道您无力奔波，我知道您无心等待，北大国际医院集团怡健殿健康管理中心携手北大医学部所属三甲医院，致力于解决业主来京看病问题，提供贴心人文关怀，为您的健康保驾护航。"
+                            android:textColor="@color/font_white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/rlWaterPaymentDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/vip_item_detail_btn"
+                            android:gravity="center"
+                            android:text="@string/vip_click_detail"
+                            android:textColor="@color/font_pink"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlTicket"
+                android:layout_width="412dp"
+                android:layout_height="380dp"
+                android:layout_below="@id/rlHotels"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/rlPhone"
+                android:background="@drawable/facilitate_ticket_buy" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlTicketDetail"
+                        android:layout_width="412dp"
+                        android:layout_height="109dp"
+                        android:background="@drawable/vip_item_cover"
+                        android:padding="5dp"
+                        android:visibility="invisible" >
+
+                        <TextView
+                            android:layout_width="526dp"
+                            android:layout_height="wrap_content"
+                            android:text="我知道您无力奔波，我知道您无心等待，北大国际医院集团怡健殿健康管理中心携手北大医学部所属三甲医院，致力于解决业主来京看病问题，提供贴心人文关怀，为您的健康保驾护航。"
+                            android:textColor="@color/font_white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/btnTicketDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/vip_item_detail_btn"
+                            android:gravity="center"
+                            android:text="@string/vip_click_detail"
+                            android:textColor="@color/font_pink"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

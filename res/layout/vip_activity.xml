@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <!-- title -->
+
+    <include
+        android:id="@+id/includeHead"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/model_title_toolbar" />
+
+    <!-- body -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include
+            android:id="@+id/includeLeft"
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            layout="@layout/model_left_toolbar" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/rlChannel"
+                android:layout_width="wrap_content"
+                android:layout_height="185dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/vip_channel" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlChannelDetail"
+                        android:layout_width="263dp"
+                        android:layout_height="109dp"
+                        android:background="@drawable/vip_item_cover"
+                        android:padding="5dp"
+                        android:visibility="invisible" >
+
+                        <TextView
+                            android:layout_width="253dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/vip_channel_intro"
+                            android:textColor="@color/font_white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/btnChannelDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/vip_item_detail_btn"
+                            android:gravity="center"
+                            android:text="@string/vip_click_detail"
+                            android:textColor="@color/font_pink"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlEvaluating"
+                android:layout_width="wrap_content"
+                android:layout_height="185dp"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/rlChannel"
+                android:background="@drawable/vip_evaluating" >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlEvaluatingDetail"
+                        android:layout_width="536dp"
+                        android:layout_height="109dp"
+                        android:background="@drawable/vip_item_cover"
+                        android:padding="5dp"
+                        android:visibility="invisible" >
+
+                        <TextView
+                            android:layout_width="526dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/vip_evaluating_intro"
+                            android:textColor="@color/font_white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/btnEvaluatingDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/vip_item_detail_btn"
+                            android:gravity="center"
+                            android:text="@string/vip_click_detail"
+                            android:textColor="@color/font_pink"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlClassroom"
+                android:layout_width="wrap_content"
+                android:layout_height="185dp"
+                android:layout_below="@id/rlChannel"
+                android:layout_margin="5dp"
+                android:background="@drawable/vip_classroom" >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlClassroomDetail"
+                        android:layout_width="263dp"
+                        android:layout_height="109dp"
+                        android:background="@drawable/vip_item_cover"
+                        android:padding="5dp"
+                        android:visibility="invisible" >
+
+                        <TextView
+                            android:layout_width="253dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/vip_classroom_intro"
+                            android:textColor="@color/font_white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/btnClassroomDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/vip_item_detail_btn"
+                            android:gravity="center"
+                            android:text="@string/vip_click_detail"
+                            android:textColor="@color/font_pink"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlFavorable"
+                android:layout_width="wrap_content"
+                android:layout_height="185dp"
+                android:layout_below="@id/rlChannel"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/rlClassroom"
+                android:background="@drawable/vip_favorable" >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlFavorableDetail"
+                        android:layout_width="263dp"
+                        android:layout_height="109dp"
+                        android:background="@drawable/vip_item_cover"
+                        android:padding="5dp"
+                        android:visibility="invisible" >
+
+                        <TextView
+                            android:layout_width="253dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/vip_favorable_intro"
+                            android:textColor="@color/font_white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/btnFavorableDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/vip_item_detail_btn"
+                            android:gravity="center"
+                            android:text="@string/vip_click_detail"
+                            android:textColor="@color/font_pink"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlFrust"
+                android:layout_width="wrap_content"
+                android:layout_height="380dp"
+                android:layout_below="@id/rlChannel"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/rlFavorable"
+                android:background="@drawable/vip_trust" >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlFrustDetail"
+                        android:layout_width="263dp"
+                        android:layout_height="109dp"
+                        android:background="@drawable/vip_item_cover"
+                        android:padding="5dp"
+                        android:visibility="invisible" >
+
+                        <TextView
+                            android:layout_width="253dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/vip_trust_intro"
+                            android:textColor="@color/font_white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/btnFrustDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/vip_item_detail_btn"
+                            android:gravity="center"
+                            android:text="@string/vip_click_detail"
+                            android:textColor="@color/font_pink"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlHealth"
+                android:layout_width="wrap_content"
+                android:layout_height="185dp"
+                android:layout_below="@id/rlClassroom"
+                android:layout_margin="5dp"
+                android:background="@drawable/vip_consult_health" >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlHealthDetail"
+                        android:layout_width="263dp"
+                        android:layout_height="109dp"
+                        android:background="@drawable/vip_item_cover"
+                        android:padding="5dp"
+                        android:visibility="invisible" >
+
+                        <TextView
+                            android:layout_width="253dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/vip_consult_health_intro"
+                            android:textColor="@color/font_white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/btnHealthDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/vip_item_detail_btn"
+                            android:gravity="center"
+                            android:text="@string/vip_click_detail"
+                            android:textColor="@color/font_pink"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlJob"
+                android:layout_width="wrap_content"
+                android:layout_height="185dp"
+                android:layout_below="@id/rlClassroom"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/rlHealth"
+                android:background="@drawable/vip_job" >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlJobDetail"
+                        android:layout_width="263dp"
+                        android:layout_height="109dp"
+                        android:background="@drawable/vip_item_cover"
+                        android:padding="5dp"
+                        android:visibility="invisible" >
+
+                        <TextView
+                            android:layout_width="253dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/vip_job_intro"
+                            android:textColor="@color/font_white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/btnJobDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/vip_item_detail_btn"
+                            android:gravity="center"
+                            android:text="@string/vip_click_detail"
+                            android:textColor="@color/font_pink"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

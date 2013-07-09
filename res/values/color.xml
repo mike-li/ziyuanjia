@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#f7f7f7</color>
+    
+    <color name="main_title_bg">#1f2026</color>
+    
+    <color name="vip_left_bar_bg">#333540</color>
+    
+    <color name="font_white">#ffffff</color>
+    <color name="font_pink">#ffa578</color>
+    <color name="font_black">#000000</color>
+    
+    <color name="building_province_background">#194281</color>
+    <color name="health_knowledge_background">#4ca45a</color>
+    
+</resources>

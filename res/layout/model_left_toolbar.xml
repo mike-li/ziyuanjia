@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="96dp"
+    android:layout_height="match_parent"
+    android:background="@color/vip_left_bar_bg"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnVip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vip_vip_btn" />
+
+    <Button
+        android:id="@+id/btnHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vip_health_btn" />
+
+    <Button
+        android:id="@+id/btnFinalcing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vip_finalcing_btn" />
+
+    <Button
+        android:id="@+id/btnEducation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vip_education_btn" />
+
+    <Button
+        android:id="@+id/btnBuilding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vip_building_btn" />
+
+    <Button
+        android:id="@+id/btnFacilitate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vip_facilitate_btn" />
+
+    <Button
+        android:id="@+id/btnBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vip_book_btn" />
+
+    <Button
+        android:id="@+id/btnMall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vip_mall_btn" />
+
+</LinearLayout>
