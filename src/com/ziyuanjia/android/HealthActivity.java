@@ -12,6 +12,7 @@ import com.ziyuanjia.android.common.LeftToolBarCommon;
 import com.ziyuanjia.android.common.TitleToolBarCommon;
 import com.ziyuanjia.android.widget.BaseActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.view.ViewPager;
@@ -20,6 +21,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
@@ -55,7 +57,7 @@ public class HealthActivity extends BaseActivity implements OnClickListener {
 	protected void findView() {
 		// TODO Auto-generated method stub
 		viewPager = (ViewPager)findViewById(R.id.viewPager);
-		
+		viewPager.setOnClickListener(this);
 		findViewById(R.id.rlTest).setOnClickListener(this);
 		findViewById(R.id.rlVip).setOnClickListener(this);
 		findViewById(R.id.rlSpecial).setOnClickListener(this);
@@ -180,6 +182,21 @@ public class HealthActivity extends BaseActivity implements OnClickListener {
 		Animation animation = AnimationUtils.loadAnimation(this, R.anim.scale); 
 		v.startAnimation(animation);
 		switch (v.getId()) {
+		case R.id.viewPager:
+			if(currentItem==0){
+				Bundle bundle = new Bundle();
+				bundle.putString("url", "www.sina.com.cn");
+				startIntent(this, WebViewActivity.class, bundle);
+			}else if(currentItem==1){
+				Bundle bundle = new Bundle();
+				bundle.putString("url", "www.sohu.com");
+				startIntent(this, WebViewActivity.class, bundle);
+			}else{
+				Bundle bundle = new Bundle();
+				bundle.putString("url", "www.163.com");
+				startIntent(this, WebViewActivity.class, bundle);
+			}
+			break;
 		case R.id.rlTest:
 			
 			break;

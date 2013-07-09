@@ -294,8 +294,10 @@ public final class R {
         public static final int tvIntro=0x7f0a0015;
         public static final int tvModelTitle=0x7f0a0046;
         public static final int tvTitle=0x7f0a000b;
+        public static final int tv_nonetwork=0x7f0a0060;
         public static final int tvintro=0x7f0a0017;
         public static final int viewPager=0x7f0a0005;
+        public static final int webview=0x7f0a005f;
     }
     public static final class layout {
         public static final int about_activity=0x7f030000;
@@ -321,6 +323,7 @@ public final class R {
         public static final int model_pull_listview_head=0x7f030014;
         public static final int model_title_toolbar=0x7f030015;
         public static final int vip_activity=0x7f030016;
+        public static final int webview=0x7f030017;
     }
     public static final class string {
         public static final int action_settings=0x7f080001;
@@ -344,6 +347,7 @@ public final class R {
         public static final int main_vip_exclusive_area=0x7f08000e;
         public static final int mall=0x7f08000d;
         public static final int pull_to_refresh_pull_label=0x7f080003;
+        public static final int system_nonetwork=0x7f08001e;
         public static final int vip_area=0x7f080006;
         public static final int vip_channel_intro=0x7f080017;
         public static final int vip_classroom_intro=0x7f080019;

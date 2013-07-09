@@ -35,4 +35,6 @@
     <string name="vip_trust_intro">北大资源集团为业主推荐高回报、高安全性的信托产品，往期回报率高达11%（具体收益根据市场调整而调整，请随时关注网站广告信息)</string>
 	<string name="vip_consult_health_intro">汇聚北大所属重点三甲医院专家及教授，以及北大方正世嘉中医院的传世中医名家牛志刚大夫及众多中医专家，为业主提供健康类在线免费咨询服务，让健康意识深入您心，让健康服务走进您的生活。</string>
     <string name="vip_job_intro">资源家为业主打开一扇通往国内知名企业——北大资源集团及其所属企业就业的大门！所有业主及其子女都可以享受到优先被录用的机会！北大资源集团欢迎你！</string>
+    
+    <string name="system_nonetwork">目前没有检测到网络，请打开系统设置->WLAN中进行设置</string>
 </resources>
